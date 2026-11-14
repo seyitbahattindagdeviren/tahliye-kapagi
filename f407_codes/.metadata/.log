@@ -247,3 +247,28 @@ COM4
 
 !ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-11-14 13:57:22.984
 !MESSAGE port: COM4
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2026-11-14 14:55:52.427
+!MESSAGE Unable to locate file: C:/kapak-proje/f407_codes/m0-ilk-proje-ep/Debug/../Src/main.c
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:01:51.888
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,783 sec: 1.954 declarations; 2.867 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2026-11-14 15:10:30.793
+!MESSAGE Failed to execute MI command:
+-stack-list-frames 0 0
+Error message from debugger back end:
+Invalid thread id: 1
+!STACK 0
+java.lang.Exception: Invalid thread id: 1
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:11:32.366
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,319 sec: 1.959 declarations; 2.881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:11:40.145
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,302 sec: 1.959 declarations; 2.881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:17:39.993
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,296 sec: 1.959 declarations; 2.881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)

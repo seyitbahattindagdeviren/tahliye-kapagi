@@ -1,0 +1,19 @@
+15:17:43 **** Incremental Build of configuration Debug for project m1-led-pointer ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "m1-led-pointer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\tahliye-kapagi\f407_codes\m1-led-pointer\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="m1-led-pointer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: m1-led-pointer.elf
+ 
+arm-none-eabi-size  m1-led-pointer.elf 
+arm-none-eabi-objdump -h -S m1-led-pointer.elf  > "m1-led-pointer.list"
+   text	   data	    bss	    dec	    hex	filename
+    744	     12	   1564	   2320	    910	m1-led-pointer.elf
+Finished building: default.size.stdout
+ 
+Finished building: m1-led-pointer.list
+ 
+
+15:17:44 Build Finished. 0 errors, 0 warnings. (took 777ms)
+
