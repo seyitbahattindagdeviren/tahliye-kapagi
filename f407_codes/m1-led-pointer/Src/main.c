@@ -19,12 +19,14 @@
 #include <stdint.h>
 
 volatile uint32_t *RCC_AHB1ENR = (volatile uint32_t *)0x40023830;
+
 volatile uint32_t *GPIOD_MODER = (volatile uint32_t *)0x40020C00;
 volatile uint32_t *GPIOD_ODR   = (volatile uint32_t *)0x40020C14;
 
 int main(void)
 {
     *RCC_AHB1ENR = 0x00000008;   // GPIOD saatini aç (3. bit)
+    (void)*RCC_AHB1ENR;
     *GPIOD_MODER = 0x55000000;   // PD12, PD13, PD14, PD15 çıkış (01)
 
     while (1)

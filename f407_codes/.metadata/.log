@@ -272,3 +272,14 @@ java.lang.Exception: Invalid thread id: 1
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:17:39.993
 !MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,296 sec: 1.959 declarations; 2.881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:28:02.131
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,287 sec: 1.959 declarations; 2.881 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-11-14 15:30:42.760
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.actions.DsfSuspendCommand$4$1@43009365): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Suspend operation timeout.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2026-11-14 15:30:42.760
+!MESSAGE Suspend operation timeout.
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-14 15:47:51.380
+!MESSAGE Indexed 'm1-led-pointer' (3 sources, 53 headers) in 0,286 sec: 1.959 declarations; 2.882 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (%0)
